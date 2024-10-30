@@ -24,6 +24,10 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'color-primary': '#ABEF5F',
+                'linear_gradient': 'bg-gradient-to-r from-[rgb(255,255,255)] to-[rgba(255,255,255,0)]',
+                'color-secendary': '#1C1C1C',
+                'color-primary': '#ABEF5F',
               }
             }
           }
@@ -35,7 +39,64 @@
         }
       </style>
 </head>
-<body>
-    
+<body class="font-manrope">
+    <!-- header part -->
+     <header class="container mx-auto bg-linear_gradient">
+        <!-- navber -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start space-x-1">
+              <i class="fa-solid fa-arrow-right bg-color-primary rounded-full -rotate-45 p-2 text-black"></i>
+              <a class="text-3xl font-extrabold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="font-bold"><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-5">
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li class="font-bold"><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <i class="fa-solid fa-magnifying-glass hidden lg:block bg-slate-50 rounded-full p-1"></i>
+              <i class="fa-solid fa-cart-shopping hidden lg:block bg-slate-50 rounded-full p-1"></i>
+              <a class="btn bg-color-primary hidden lg:flex">Book Consult<i class="fa-solid fa-arrow-right bg-color-secendary rounded-full -rotate-45 p-2 text-white"></i></a>
+            </div>
+          </div>
+
+        <!-- banner -->
+
+     </header>
+
+     <!-- main part -->
+      <main></main>
+
+      <!-- footer part -->
+       <footer></footer>
 </body>
 </html>
