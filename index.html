@@ -36,6 +36,12 @@
         .font-manrope{
             font-family: "Manrope", sans-serif;
         }
+        .bk-img{
+          background-image: url('../ph-hero-assignment-03/assets/bg.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
       </style>
 </head>
 
@@ -151,7 +157,7 @@
             </p>
            </div>
           <!-- grid card -->
-           <div class="grid grid-cols-4 gap-6 p-20">
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:p-20">
             <!-- product card -->
              <div class="rounded-lg shadow-md overflow-hidden bg-[#E7C1D3;]">
               <img class="mx-1" src="./assets/concept.png" alt="">
@@ -177,9 +183,50 @@
            </div>
         </section>
 
+        <!-- next project section -->
+        <section class="bg-gray-50 flex justify-center items-center min-h-screen">
+          <div class="w-full max-w-2xl p-8 bg-white rounded-lg shadow-lg text-center">
+            <button class="bg-[#ABEF5F;] py-2 px-4 rounded-full font-semibold mb-4"><i class="fa-solid fa-arrow-right"></i>Let's Connect</button>
+            <h2 class="text-4xl font-semibold mb-2">Let’s Discuss Next Project</h2>
+            <p class="bg[#494949;] mb-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <!--cintact form-->
+            <form class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- first name -->
+                <input type="text" placeholder="First Name*" class="w-full p-3 border border-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-green-600">
+                <input type="text" placeholder="Last Name*" class="w-full p-3 border border-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-green-600">
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- phone number -->
+                <input type="text" placeholder="Phone Number*" class="w-full p-3 border border-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-green-600">
+                 <!--email no -->
+                 <input type="text" placeholder="Email Number*" class="w-full p-3 border border-gray-400 rounded-full focus:outline-none focus:ring-2 focus:ring-green-600">
+              </div>
+              <!-- massage field -->
+              <textarea placeholder="write your message here" class="w-full h-32 p-3 border-gray-50 rounded-lg focus:outline-none focus:ring-2 focus:ring bg-slate-100"></textarea>
+              <!-- button -->
+               <button class="btn bg-color-primary w-full">Send Mail<i class="fa-solid fa-arrow-right bg-color-secendary rounded-full -rotate-45 p-2 text-white"></i></button>
+            </form>
+          </div>
+        </section>
      </main>
 
       <!-- footer part -->
-       <footer></footer>
+       <footer>
+        <footer class="footer footer-center bg-neutral text-neutral-content p-10">
+          <div class="flex">
+            <i class="fa-solid fa-arrow-right bg-color-primary rounded-full -rotate-45 p-2 text-black"></i>
+              <a class="text-3xl font-extrabold">Rinterio</a>
+          </div>
+          <p class="text-[#737373;] font-medium">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+          <nav class="flex justify-between">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">Services</a>
+            <a class="link link-hover">Portfolio</a>
+            <a class="link link-hover">Blogs</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav>
+        </footer>
+       </footer>
 </body>
 </html>
